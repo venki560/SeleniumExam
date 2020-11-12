@@ -1,0 +1,3 @@
+13:53:58.405 [main] INFO  TestCases.AutoITPage - driver initialized
+13:54:00.909 [main] INFO  TestCases.AutoITPage - the-internet page is launched
+13:54:06.771 [main] INFO  TestCases.AutoITPage - auth windows is cleared successfully

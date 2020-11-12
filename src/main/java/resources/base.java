@@ -24,14 +24,14 @@ public class base {
 		prop.load(fis);
 		String browserTypee = prop.getProperty("Browser");
 		String browserType = System.getProperty("Browser");
-		if(browserType.equals("chrome"))
+		if(browserTypee.equals("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", rootPath+"\\src\\main\\java\\resources\\chromedriver86.exe");
 			driver = new ChromeDriver();
 		}
-		else if(browserType.equals("Firefox"))
+		else if(browserTypee.equals("Firefox"))
 		{
-			System.setProperty("webdriver.geckodriver.driver", rootPath+"\\src\\main\\java\\resources\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", rootPath+"\\src\\main\\java\\resources\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 		

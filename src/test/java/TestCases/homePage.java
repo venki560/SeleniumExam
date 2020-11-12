@@ -2,6 +2,8 @@ package TestCases;
 
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -13,12 +15,14 @@ import resources.base;
 
 public class homePage extends base {
 	
+	private static Logger log = LogManager.getLogger(homePage.class.getName());
 	public WebDriver driver;
 	@BeforeTest
 	public void setUp() throws IOException
 	{
 		driver=initializeDriver();
 		driver.get(prop.getProperty("url"));
+		log.info("url is successfully Launched");
 	}
 	
 	@Test
@@ -27,7 +31,9 @@ public class homePage extends base {
 		homePageObject hpO=new homePageObject(driver);
 		System.out.println(hpO.homeText().getText());
 		Assert.assertEquals(hpO.homeText().getText(), "AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING");
+		log.info("home page text displayed is correct");
 		Assert.assertEquals(hpO.signIn().getText(), "Login");
+		log.info("sign text displayed is correct");
 		
 	}
 	
@@ -35,6 +41,7 @@ public class homePage extends base {
 	public void tearDown()
 	{
 		driver.close();
+		log.info("browser is closed");
 	}
 
 }
