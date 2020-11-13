@@ -1,2 +1,6 @@
-16:32:44.488 [main] INFO  TestCases.loginPage - login button is clicked
-16:32:44.557 [main] INFO  TestCases.loginPage - Browser is closed
+16:38:43.298 [main] INFO  TestCases.loginPage - application is launhed successfully
+16:38:44.838 [main] INFO  TestCases.loginPage - click on login btn passed
+16:38:49.931 [main] INFO  TestCases.loginPage - username is entered passed
+16:38:50.207 [main] INFO  TestCases.loginPage - password is entered passed
+16:38:50.585 [main] INFO  TestCases.loginPage - login button is clicked
+16:38:50.809 [main] INFO  TestCases.loginPage - Browser is closed

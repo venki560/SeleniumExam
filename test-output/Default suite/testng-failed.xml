@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.AutoITPage">
+      <class name="TestCases.cloud">
         <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="authWin"/>
+          <include name="cloud"/>
         </methods>
-      </class> <!-- TestCases.AutoITPage -->
+      </class> <!-- TestCases.cloud -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,7 +1,7 @@
-16:31:52.946 [main] INFO  TestCases.AutoITPage - auth windows is cleared successfully
-16:32:30.551 [main] INFO  TestCases.AutoITPage - file deleted
-16:32:34.088 [main] INFO  TestCases.loginPage - driver initialize successfully
-16:32:38.427 [main] INFO  TestCases.loginPage - application is launhed successfully
-16:32:39.021 [main] INFO  TestCases.loginPage - click on login btn passed
-16:32:44.216 [main] INFO  TestCases.loginPage - username is entered passed
-16:32:44.312 [main] INFO  TestCases.loginPage - password is entered passed
+16:37:41.523 [main] INFO  TestCases.loginPage - login button is clicked
+16:37:41.621 [main] INFO  TestCases.loginPage - Browser is closed
+16:37:45.031 [main] INFO  TestCases.AutoITPage - driver initialized
+16:37:46.797 [main] INFO  TestCases.AutoITPage - the-internet page is launched
+16:37:52.661 [main] INFO  TestCases.AutoITPage - auth windows is cleared successfully
+16:38:33.393 [main] INFO  TestCases.AutoITPage - file deleted
+16:38:40.411 [main] INFO  TestCases.loginPage - driver initialize successfully
