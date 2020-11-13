@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -12,6 +13,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
@@ -23,6 +25,9 @@ public class base {
 	public WebDriver initializeDriver() throws IOException
 	{
 		String rootPath = System.getProperty("user.dir");
+		HashMap<String,Object> perfsOpt = new HashMap<String, Object>();
+		perfsOpt.put("profile.default_content_settings.popups", 0);
+		perfsOpt.put("download.default_directory", rootPath);
 		FileInputStream fis = new FileInputStream(rootPath+"\\src\\main\\java\\resources\\data.properties");
 		prop = new Properties();
 		prop.load(fis);
@@ -31,7 +36,14 @@ public class base {
 		if(browserTypee.equals("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", rootPath+"\\src\\main\\java\\resources\\chromedriver86.exe");
-			driver = new ChromeDriver();
+			ChromeOptions option= new ChromeOptions();
+			option.setExperimentalOption("prefs", perfsOpt);
+			if(browserType.contains("headless"))
+			{
+			option.addArguments("headless");
+			}
+			driver = new ChromeDriver(option);	
+			
 		}
 		else if(browserTypee.equals("Firefox"))
 		{
@@ -44,15 +56,14 @@ public class base {
 		
 	}
 	
-	public String getScreenShot(String userMethodName, WebDriver driver) throws IOException
+	public String getScreenShot(String TestMethodName, WebDriver driver) throws IOException
 	{
-		TakesScreenshot ss = (TakesScreenshot) driver;
-		File source = ss.getScreenshotAs(OutputType.FILE);
-		String dest = System.getProperty("user.dir")+"//reports//"+userMethodName+".png";
+		TakesScreenshot sT=(TakesScreenshot)driver;
+		File source = sT.getScreenshotAs(OutputType.FILE);
+		String dest = System.getProperty("user.dir")+"\\report\\"+TestMethodName+".png";
 		FileUtils.copyFile(source, new File(dest));
 		return dest;
 	}
-	
 	
 }
 
