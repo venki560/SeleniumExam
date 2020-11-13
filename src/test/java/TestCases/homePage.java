@@ -30,7 +30,7 @@ public class homePage extends base {
 	{
 		homePageObject hpO=new homePageObject(driver);
 		System.out.println(hpO.homeText().getText());
-		Assert.assertEquals(hpO.homeText().getText(), "AN ACADEMY TO LEARN EVERYTHING ABOUT TESTINGs");
+		Assert.assertEquals(hpO.homeText().getText(), "AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING");
 		log.info("home page text displayed is correct");
 		Assert.assertEquals(hpO.signIn().getText(), "Login");
 		log.info("sign text displayed is correct");

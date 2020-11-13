@@ -47,7 +47,7 @@ public class AutoITPage extends base {
 		uploadPage upDown = new uploadPage(driver);
 		upDown.chooseFile.click();
 		Thread.sleep(5000);
-		Runtime.getRuntime().exec(rootPath+"//src//main//java//resources//autoItScript1.exe");
+		Runtime.getRuntime().exec(rootPath+"//src//main//java//resources//autoItScript.exe");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'9.46 KB')]")));
 		Assert.assertEquals(upDown.KB.getText(), "9.46 KB");
 		upDown.download.click();
