@@ -22,5 +22,8 @@ public class uploadPage {
 	
 	@FindBy(xpath="//span[contains(text(),'Download')]")
 	public WebElement download;
+	
+	@FindBy(xpath="//div[contains(text(),'9.46 KB')]")
+	public WebElement KB;
 }
 

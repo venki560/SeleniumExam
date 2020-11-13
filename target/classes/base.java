@@ -15,16 +15,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class base {
 
 	public WebDriver driver;
 	public Properties prop;
+	public String rootPath;
+	public WebDriverWait wait;
 	@Test
 	public WebDriver initializeDriver() throws IOException
 	{
-		String rootPath = System.getProperty("user.dir");
+		rootPath = System.getProperty("user.dir");
 		HashMap<String,Object> perfsOpt = new HashMap<String, Object>();
 		perfsOpt.put("profile.default_content_settings.popups", 0);
 		perfsOpt.put("download.default_directory", rootPath);
@@ -52,6 +55,7 @@ public class base {
 		}
 		
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		wait = new WebDriverWait(driver, 20); 
 		return driver;
 		
 	}
