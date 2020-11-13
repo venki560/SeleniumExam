@@ -43,8 +43,10 @@ public class AutoITPage extends base {
 	public void uploadDownload() throws IOException, InterruptedException
 	{
 		driver.get(prop.getProperty("urlUpload"));
+		Thread.sleep(5000);
 		uploadPage upDown = new uploadPage(driver);
 		upDown.chooseFile.click();
+		Thread.sleep(5000);
 		Runtime.getRuntime().exec(rootPath+"//src//main//java//resources//autoItScript1.exe");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'9.46 KB')]")));
 		Assert.assertEquals(upDown.KB.getText(), "9.46 KB");

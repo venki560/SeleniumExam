@@ -36,7 +36,7 @@ public class base {
 		prop.load(fis);
 		String browserTypee = prop.getProperty("Browser");
 		String browserType = System.getProperty("Browser");
-		if(browserTypee.equals("chrome"))
+		if(browserType.equals("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", rootPath+"\\src\\main\\java\\resources\\chromedriver86.exe");
 			ChromeOptions option= new ChromeOptions();
@@ -48,14 +48,15 @@ public class base {
 			driver = new ChromeDriver(option);	
 			
 		}
-		else if(browserTypee.equals("Firefox"))
+		else if(browserType.equals("Firefox"))
 		{
 			System.setProperty("webdriver.gecko.driver", rootPath+"\\src\\main\\java\\resources\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 		
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		wait = new WebDriverWait(driver, 20); 
+		wait = new WebDriverWait(driver, 30); 
+		driver.manage().window().maximize();
 		return driver;
 		
 	}
@@ -64,7 +65,7 @@ public class base {
 	{
 		TakesScreenshot sT=(TakesScreenshot)driver;
 		File source = sT.getScreenshotAs(OutputType.FILE);
-		String dest = System.getProperty("user.dir")+"\\report\\"+TestMethodName+".png";
+		String dest = System.getProperty("user.dir")+"\\reports\\"+TestMethodName+".png";
 		FileUtils.copyFile(source, new File(dest));
 		return dest;
 	}

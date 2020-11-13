@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
-  <test thread-count="5" verbose="0" name="LoginPage(failed)">
+  <listeners>
+    <listener class-name="TestCases.listener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="AutoIT(failed)">
     <classes>
-      <class name="TestCases.loginPage">
+      <class name="TestCases.AutoITPage">
         <methods>
-          <include name="tearDown"/>
+          <include name="uploadDownload"/>
           <include name="setUp"/>
-          <include name="login"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- TestCases.loginPage -->
+      </class> <!-- TestCases.AutoITPage -->
     </classes>
-  </test> <!-- LoginPage(failed) -->
+  </test> <!-- AutoIT(failed) -->
 </suite> <!-- Failed suite [Suite] -->

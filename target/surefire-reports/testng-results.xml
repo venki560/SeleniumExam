@@ -1,69 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="17476" started-at="2020-11-12T13:22:37 IST" finished-at="2020-11-12T13:22:54 IST">
+  <suite name="Suite" duration-ms="40948" started-at="2020-11-13T16:29:42 IST" finished-at="2020-11-13T16:30:23 IST">
     <groups>
     </groups>
-    <test name="HomePage" duration-ms="7674" started-at="2020-11-12T13:22:37 IST" finished-at="2020-11-12T13:22:45 IST">
-      <class name="TestCases.homePage">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.homePage@5dda768f]" name="setUp" is-config="true" duration-ms="7253" started-at="2020-11-12T13:22:37 IST" finished-at="2020-11-12T13:22:44 IST">
+    <test name="AutoIT" duration-ms="40948" started-at="2020-11-13T16:29:42 IST" finished-at="2020-11-13T16:30:23 IST">
+      <class name="TestCases.AutoITPage">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.AutoITPage@24569dba]" name="setUp" is-config="true" duration-ms="4470" started-at="2020-11-13T16:29:42 IST" finished-at="2020-11-13T16:29:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="homePage()[pri:0, instance:TestCases.homePage@5dda768f]" name="homePage" duration-ms="258" started-at="2020-11-12T13:22:44 IST" finished-at="2020-11-12T13:22:44 IST">
+        <test-method status="PASS" signature="authWin()[pri:0, instance:TestCases.AutoITPage@24569dba]" name="authWin" duration-ms="8443" started-at="2020-11-13T16:29:46 IST" finished-at="2020-11-13T16:29:55 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homePage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.homePage@5dda768f]" name="tearDown" is-config="true" duration-ms="93" started-at="2020-11-12T13:22:44 IST" finished-at="2020-11-12T13:22:45 IST">
+        </test-method> <!-- authWin -->
+        <test-method status="PASS" signature="uploadDownload()[pri:0, instance:TestCases.AutoITPage@24569dba]" name="uploadDownload" duration-ms="27927" started-at="2020-11-13T16:29:55 IST" finished-at="2020-11-13T16:30:23 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- TestCases.homePage -->
-    </test> <!-- HomePage -->
-    <test name="LoginPage" duration-ms="9780" started-at="2020-11-12T13:22:45 IST" finished-at="2020-11-12T13:22:54 IST">
-      <class name="TestCases.loginPage">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.loginPage@ae13544]" name="setUp" is-config="true" duration-ms="2477" started-at="2020-11-12T13:22:45 IST" finished-at="2020-11-12T13:22:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:TestCases.loginPage@ae13544]" name="login" duration-ms="4900" started-at="2020-11-12T13:22:47 IST" data-provider="getData" finished-at="2020-11-12T13:22:52 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[adminOne]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[adminOne]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:TestCases.loginPage@ae13544]" name="login" duration-ms="2327" started-at="2020-11-12T13:22:52 IST" data-provider="getData" finished-at="2020-11-12T13:22:54 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[adminTwo]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[adminTwo]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.loginPage@ae13544]" name="tearDown" is-config="true" duration-ms="70" started-at="2020-11-12T13:22:54 IST" finished-at="2020-11-12T13:22:54 IST">
+        </test-method> <!-- uploadDownload -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.AutoITPage@24569dba]" name="tearDown" is-config="true" duration-ms="62" started-at="2020-11-13T16:30:23 IST" finished-at="2020-11-13T16:30:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- TestCases.loginPage -->
-    </test> <!-- LoginPage -->
+      </class> <!-- TestCases.AutoITPage -->
+    </test> <!-- AutoIT -->
   </suite> <!-- Suite -->
 </testng-results>
