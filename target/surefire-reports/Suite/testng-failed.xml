@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="TestCases.listener"/>
   </listeners>
-  <test thread-count="5" verbose="0" name="AutoIT(failed)">
+  <test thread-count="5" verbose="0" name="excelDataDrivenLogin(failed)">
     <classes>
-      <class name="TestCases.AutoITPage">
+      <class name="TestCases.excelDataLoginPage">
         <methods>
-          <include name="uploadDownload"/>
           <include name="setUp"/>
+          <include name="login"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- TestCases.AutoITPage -->
+      </class> <!-- TestCases.excelDataLoginPage -->
     </classes>
-  </test> <!-- AutoIT(failed) -->
+  </test> <!-- excelDataDrivenLogin(failed) -->
 </suite> <!-- Failed suite [Suite] -->

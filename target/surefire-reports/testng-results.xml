@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="40948" started-at="2020-11-13T16:29:42 IST" finished-at="2020-11-13T16:30:23 IST">
+  <suite name="Suite" duration-ms="28347" started-at="2020-11-14T00:56:49 IST" finished-at="2020-11-14T00:57:18 IST">
     <groups>
     </groups>
-    <test name="AutoIT" duration-ms="40948" started-at="2020-11-13T16:29:42 IST" finished-at="2020-11-13T16:30:23 IST">
-      <class name="TestCases.AutoITPage">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.AutoITPage@24569dba]" name="setUp" is-config="true" duration-ms="4470" started-at="2020-11-13T16:29:42 IST" finished-at="2020-11-13T16:29:46 IST">
+    <test name="excelDataDrivenLogin" duration-ms="28347" started-at="2020-11-14T00:56:49 IST" finished-at="2020-11-14T00:57:18 IST">
+      <class name="TestCases.excelDataLoginPage">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.excelDataLoginPage@24569dba]" name="setUp" is-config="true" duration-ms="8941" started-at="2020-11-14T00:56:49 IST" finished-at="2020-11-14T00:56:58 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="authWin()[pri:0, instance:TestCases.AutoITPage@24569dba]" name="authWin" duration-ms="8443" started-at="2020-11-13T16:29:46 IST" finished-at="2020-11-13T16:29:55 IST">
+        <test-method status="PASS" signature="login()[pri:0, instance:TestCases.excelDataLoginPage@24569dba]" name="login" duration-ms="18383" started-at="2020-11-14T00:56:59 IST" finished-at="2020-11-14T00:57:17 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- authWin -->
-        <test-method status="PASS" signature="uploadDownload()[pri:0, instance:TestCases.AutoITPage@24569dba]" name="uploadDownload" duration-ms="27927" started-at="2020-11-13T16:29:55 IST" finished-at="2020-11-13T16:30:23 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadDownload -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.AutoITPage@24569dba]" name="tearDown" is-config="true" duration-ms="62" started-at="2020-11-13T16:30:23 IST" finished-at="2020-11-13T16:30:23 IST">
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.excelDataLoginPage@24569dba]" name="tearDown" is-config="true" duration-ms="675" started-at="2020-11-14T00:57:17 IST" finished-at="2020-11-14T00:57:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- TestCases.AutoITPage -->
-    </test> <!-- AutoIT -->
+      </class> <!-- TestCases.excelDataLoginPage -->
+    </test> <!-- excelDataDrivenLogin -->
   </suite> <!-- Suite -->
 </testng-results>

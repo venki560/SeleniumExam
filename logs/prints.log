@@ -1,6 +1,4 @@
-17:08:27.435 [main] INFO  TestCases.loginPage - application is launhed successfully
-17:08:28.300 [main] INFO  TestCases.loginPage - click on login btn passed
-17:08:33.402 [main] INFO  TestCases.loginPage - username is entered passed
-17:08:33.526 [main] INFO  TestCases.loginPage - password is entered passed
-17:08:33.641 [main] INFO  TestCases.loginPage - login button is clicked
-17:08:33.717 [main] INFO  TestCases.loginPage - Browser is closed
+00:57:16.888 [main] INFO  TestCases.excelDataLoginPage - username is entered passed
+00:57:16.916 [main] INFO  TestCases.excelDataLoginPage - password is entered passed
+00:57:17.440 [main] INFO  TestCases.excelDataLoginPage - login button is clicked
+00:57:18.311 [main] INFO  TestCases.excelDataLoginPage - Browser is closed

@@ -5,29 +5,10 @@
 <listener class-name="TestCases.listener"/>
 </listeners>
   
-  <test thread-count="5" name="HomePage">
+  
+  <test thread-count="5" name="excelDataDrivenLogin">
     <classes>
-      <class name="TestCases.homePage"/>
-       </classes>
-  </test> 
-  <test thread-count="5" name="LoginPage">
-    <classes>
-      <class name="TestCases.loginPage"/>
-       </classes>
-  </test>
-<test thread-count="5" name="AutoIT">
-    <classes>
-      <class name="TestCases.AutoITPage"/>
-       </classes>
-  </test>
-  <test thread-count="5" name="MySqlParameter">
-    <classes>
-      <class name="TestCases.parameterMySQlServer"/>
-       </classes>
-  </test>
-  <test thread-count="5" name="cloud">
-    <classes>
-      <class name="TestCases.cloud"/>
+      <class name="TestCases.excelDataLoginPage"/>
        </classes>
   </test>
   
